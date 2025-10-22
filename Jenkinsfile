@@ -1,19 +1,19 @@
 pipeline{
   agent any 
    stages{
-     stage('first:SCM GIT'){
+     stage('First:Git Code'){
        steps{
              git'https://github.com/SwapnaJai/multistagejenkin.git'
           }
      }
        stage('Second:build'){
           steps{
-                sh 'echo "building the app"'
+               bat 'echo "building the app"'
               }
      } 
         stage('Third:Test'){
           steps{
-                 sh 'echo "test the app"'
+                 bat 'echo "test the app"'
           }
      }
    }
