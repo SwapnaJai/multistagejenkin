@@ -6,7 +6,7 @@ pipeline{
              git'https://github.com/SwapnaJai/multistagejenkin.git'
           }
      }
-       stage('Second:build'){
+       stage('Second:Build'){
           steps{
                bat 'echo "building the app"'
               }
