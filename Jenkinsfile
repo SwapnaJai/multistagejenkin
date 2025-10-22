@@ -6,12 +6,12 @@ pipeline{
              git'https://github.com/SwapnaJai/multistagejenkin.git'
           }
      }
-       stage('second :build'){
+       stage('build'){
           steps{
                 sh 'echo "building the app"'
               }
      } 
-        stage('Third:Test'){
+        stage('Test'){
           steps{
                  sh 'echo "test the app"'
           }
