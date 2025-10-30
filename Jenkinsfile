@@ -8,7 +8,7 @@ pipeline{
      }
        stage('Second:Build'){
           steps{
-               'echo building the app'
+               sh 'echo "Building the application..."'
              }
      } 
         stage('Third:Test'){
