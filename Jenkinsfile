@@ -8,12 +8,12 @@ pipeline{
      }
        stage('Second:Build'){
           steps{
-              sh 'echo building the app'
+               'echo building the app'
              }
      } 
         stage('Third:Test'){
           steps{
-              sh 'echo test the app'
+               'echo test the app'
           }
      }
    }
