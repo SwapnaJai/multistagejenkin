@@ -13,7 +13,7 @@ pipeline{
      } 
         stage('Third:Test'){
           steps{
-               'echo test the app'
+               sh 'echo "Running tests..."'
           }
      }
    }
